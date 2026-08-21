@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StagingPaths:
   - <MSUBuildPath>
-  url: 
+  url: https://github.com/CalculatorSoup/Desolate_Coast
 --- !u!114 &-732514325962398760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,7 +28,7 @@ MonoBehaviour:
   m_Name: AssetBundleDefinitions
   m_EditorClassIdentifier: 
   StagingPaths:
-  - <MSUBuildPath>
+  - <MSUBuildPathPlugins>
   assetBundles:
   - assetBundleName: coastassets
     assets:
@@ -110,7 +110,7 @@ MonoBehaviour:
   - <ManifestPluginStaging>
   Author: wormsworms
   Name: Desolate_Coast
-  Description: An alternate Stage 1 map set on a spooky rocky island. Also comes
+  Description: An alternate Stage 1 map set on a dark, overcast island. Also comes
     with a Simulacrum variant!
   Version: 1.0.0
   Dependencies:
@@ -137,6 +137,6 @@ MonoBehaviour:
   m_Name: AssemblyDefinitions
   m_EditorClassIdentifier: 
   StagingPaths:
-  - <MSUBuildPath>
+  - <MSUBuildPathPlugins>
   definitions:
   - {fileID: 5897886265953266890, guid: cf964abff13ef334780fabff148de05a, type: 3}
