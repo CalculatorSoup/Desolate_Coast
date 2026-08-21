@@ -7,7 +7,7 @@ using System.Text;
 using UnityEngine.AddressableAssets;
 using static R2API.DirectorAPI;
 
-namespace BroadcastPerch
+namespace DesolateCoast
 {
     public class IsStarstorm2
     {
