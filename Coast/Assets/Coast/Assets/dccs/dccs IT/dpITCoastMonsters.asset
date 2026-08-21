@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 495100722, guid: 45feadaaa90b2d2217207fb8b533753e, type: 3}
+  m_Name: dpITCoastMonsters
+  m_EditorClassIdentifier: 
+  targetPool: {fileID: 11400000, guid: e0e7a74dbf9dcf549abb2c4e082ddcf9, type: 2}
+  poolCategories:
+  - name: Standard
+    categoryWeight: 0.98
+    alwaysIncluded:
+    - dccs: {fileID: 11400000, guid: 2f3ea46c75662ef43bd90f7d8bbf7f3a, type: 2}
+      familyDccs:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      weight: 0
+    includedIfConditionsMet:
+    - dccs: {fileID: 11400000, guid: 9b0bd5312b1cd174393594838401d970, type: 2}
+      familyDccs:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      weight: 1
+      requiredExpansions:
+      - _asset: {fileID: 0}
+        _address: d4f30c23b971a9b428e2796dc04ae099
+        _useDirectReference: 0
+        _canLoadFromCatalog: 0
+    includedIfNoConditionsMet: []

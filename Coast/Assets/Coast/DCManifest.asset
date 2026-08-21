@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6465034321272946658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0a82fec78ebc734d9ad1346cd40b5f9, type: 3}
+  m_Name: ThunderstoreData
+  m_EditorClassIdentifier: 
+  StagingPaths:
+  - <MSUBuildPath>
+  url: 
+--- !u!114 &-732514325962398760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d1008b78cb6e846889b7778282fbef, type: 3}
+  m_Name: AssetBundleDefinitions
+  m_EditorClassIdentifier: 
+  StagingPaths:
+  - <MSUBuildPath>
+  assetBundles:
+  - assetBundleName: coastassets
+    assets:
+    - {fileID: 102900000, guid: 37a229fba942a5e479dd7e4b6fac4186, type: 3}
+  - assetBundleName: coastscenes
+    assets:
+    - {fileID: 102900000, guid: 6d55a48367cc6484dbd020adc460361b, type: 3}
+    - {fileID: 102900000, guid: 2677731c18ec68549b6b9c4ed110991c, type: 3}
+--- !u!114 &-713757896069394590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b243ff405b33b94dbf5b6775dd9aa33, type: 3}
+  m_Name: Files
+  m_EditorClassIdentifier: 
+  StagingPaths:
+  - <MSUBuildPathStreamingLanguage>
+  includeMetaFiles: 0
+  files:
+  - {fileID: 102900000, guid: f191b1ff9c64a8347b3bad85da459e87, type: 3}
+--- !u!114 &-696405432442314894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b243ff405b33b94dbf5b6775dd9aa33, type: 3}
+  m_Name: Files
+  m_EditorClassIdentifier: 
+  StagingPaths:
+  - <MSUBuildPath>
+  includeMetaFiles: 0
+  files:
+  - {fileID: 2800000, guid: eb1cdc77e31421c4eb98250d3f4e55c9, type: 3}
+  - {fileID: 4900000, guid: 10671c03a58b66c4ab29c202502ba190, type: 3}
+  - {fileID: 4900000, guid: 5cd16dc6022d4df469155531f4b07c6c, type: 3}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e563561e08b6a3642a487177f5cfbb37, type: 3}
+  m_Name: DCManifest
+  m_EditorClassIdentifier: 
+  Data:
+  - {fileID: 171841700590212042}
+  - {fileID: -732514325962398760}
+  - {fileID: 365718730013553393}
+  - {fileID: -713757896069394590}
+  - {fileID: -696405432442314894}
+  - {fileID: -6465034321272946658}
+  identity: {fileID: 171841700590212042}
+  QuickAccess: 1
+--- !u!114 &171841700590212042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22bb7fd1d3b56a48bc52f8e407901d6, type: 3}
+  m_Name: ManifestIdentity
+  m_EditorClassIdentifier: 
+  StagingPaths:
+  - <ManifestPluginStaging>
+  Author: wormsworms
+  Name: Desolate_Coast
+  Description: An alternate Stage 1 map set on a spooky rocky island. Also comes
+    with a Simulacrum variant!
+  Version: 1.0.0
+  Dependencies:
+  - {fileID: 11400000, guid: 2d4d09ec817c24698d35dc9bf0704fdc, type: 2}
+  - {fileID: 11400000, guid: f0d760e9d4649854da675f3b2978b41b, type: 2}
+  - {fileID: 11400000, guid: 1f1d261aeee91427ddd08b6378ec4e5a, type: 2}
+  - {fileID: 11400000, guid: 1938606488471c579b629a339fdab043, type: 2}
+  - {fileID: 11400000, guid: a644a53693d44639c70550096ce74b93, type: 2}
+  - {fileID: 11400000, guid: d7d8ed5ac59df8acbbc4983f1ebba079, type: 2}
+  - {fileID: 11400000, guid: 98480314448d120c05e373472456e52b, type: 2}
+  - {fileID: 11400000, guid: 184f0fdf3edcd6bad171410f4e0fd947, type: 2}
+  - {fileID: 11400000, guid: 48f050b3512173aba0a952f846a557fa, type: 2}
+  - {fileID: 11400000, guid: bff73382628f698c89c1d9ae43c8f350, type: 2}
+--- !u!114 &365718730013553393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b7e13dda513544419a89926bd12ad8a, type: 3}
+  m_Name: AssemblyDefinitions
+  m_EditorClassIdentifier: 
+  StagingPaths:
+  - <MSUBuildPath>
+  definitions:
+  - {fileID: 5897886265953266890, guid: cf964abff13ef334780fabff148de05a, type: 3}
