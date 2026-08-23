@@ -86,7 +86,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BlueChannelBias: 1.6
+    - _BlueChannelBias: 2.1
     - _BlueChannelSmoothness: 0.65
     - _BlueChannelSpecularExponent: 0
     - _BlueChannelSpecularStrength: 0
@@ -95,7 +95,7 @@ Material:
     - _Cull: 2
     - _Cutoff: 0.5
     - _DecalLayer: 1
-    - _Depth: 0.612
+    - _Depth: 0.4
     - _DetailNormalMapScale: 1
     - _DoublesampleOn: 1
     - _DstBlend: 0

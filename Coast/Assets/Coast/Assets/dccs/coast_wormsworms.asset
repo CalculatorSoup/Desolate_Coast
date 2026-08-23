@@ -44,7 +44,7 @@ MonoBehaviour:
     m_SubObjectType: 
   mainTrack: {fileID: 0}
   bossTrack: {fileID: 0}
-  environmentColor: {r: 0.24862051, g: 0.31793556, b: 0.3490566, a: 0}
+  environmentColor: {r: 0.31123492, g: 0.24705882, b: 0.34901962, a: 0}
   hasSafeStart: 0
   suppressPlayerEntry: 0
   suppressNpcEntry: 0

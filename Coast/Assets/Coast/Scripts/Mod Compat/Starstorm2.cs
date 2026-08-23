@@ -36,7 +36,8 @@ namespace DesolateCoast
                 {
                     spawnCard = SS2Assets.LoadAsset<RoR2.SpawnCard>("scLampBoss", (SS2Bundle)17),
                     spawnDistance = RoR2.DirectorCore.MonsterSpawnDistance.Standard,
-                    selectionWeight = 1
+                    selectionWeight = 1,
+                    minimumStageCompletions = 1
                 };
 
                 var wayfarerHolder = new DirectorAPI.DirectorCardHolder

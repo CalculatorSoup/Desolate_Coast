@@ -7,17 +7,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: matCoastStormCloud
-  m_Shader: {fileID: 4800000, guid: 8ae0e514823ad2f47a57448ec98b13c3, type: 3}
+  m_Name: matSkyboxInfiniteTower
+  m_Shader: {fileID: 103, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords: []
-  m_InvalidKeywords:
-  - CLOUDOFFSET
-  - FRESNEL
-  - TRIPLANAR
-  - USE_CLOUDS
-  - VERTEXCOLOR
-  - _EMISSION
-  m_LightmapFlags: 1
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -26,16 +20,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _BumpMap:
+    - _BackTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Cloud1Tex:
-        m_Texture: {fileID: 2800000, guid: cfa55abb9a37c15478c6072b2127d7b5, type: 3}
-        m_Scale: {x: 3, y: 3}
-        m_Offset: {x: 0, y: 0}
-    - _Cloud2Tex:
-        m_Texture: {fileID: 2800000, guid: bcb584f3ec0599b459e5df6385a69933, type: 3}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -50,14 +40,26 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DownTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1e9ad0be781432e4baad30f3afa496b8, type: 3}
+    - _FrontTex:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0.2}
+        m_Offset: {x: 0, y: 0}
+    - _LeftTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -70,56 +72,40 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _RemapTex:
-        m_Texture: {fileID: 2800000, guid: 6e077fadd1dce26459fba71558b5a288, type: 3}
+    - _RightTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex:
+        m_Texture: {fileID: 8900000, guid: 222e34cb43132d041991972e77505c26, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UpTex:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlphaBias: 0
-    - _AlphaBoost: 20
-    - _Boost: 1.6
     - _BumpScale: 1
-    - _CalcTextureAlphaOn: 0
-    - _CloudOffsetOn: 1
-    - _CloudsOn: 1
-    - _Cull: 0
-    - _Cutoff: 0.578
-    - _DepthOffset: 10
+    - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DisableRemapOn: 0
-    - _DistortionStrength: 0.52
-    - _DstBlend: 1
-    - _ExternalAlpha: 1
-    - _Fade: 1
-    - _FadeCloseDistance: 0.5
-    - _FadeCloseOn: 0
-    - _FresnelOn: 1
-    - _FresnelPower: -0.33
+    - _DstBlend: 0
+    - _Exposure: 0.24
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _InternalSimpleBlendMode: 1
-    - _InvFade: 2
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OffsetAmount: 0
     - _Parallax: 0.02
-    - _SkyboxOnly: 0
+    - _Rotation: 88
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _UseUV1On: 0
-    - _VertexAlphaOn: 0
-    - _VertexColorOn: 1
-    - _VertexOffsetOn: 0
-    - _ZTest: 4
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _CutoffScroll: {r: 0.08, g: -0.1, b: 0.1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _TintColor: {r: 0.05882353, g: 0.011764706, b: 0.019607844, a: 0.6156863}
+    - _Tint: {r: 0.6037736, g: 0, b: 0.56352204, a: 1}
   m_BuildTextureStacks: []

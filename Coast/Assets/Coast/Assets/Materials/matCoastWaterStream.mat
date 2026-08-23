@@ -7,20 +7,19 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: matCoastStormCloud
+  m_Name: matCoastWaterStream
   m_Shader: {fileID: 4800000, guid: 8ae0e514823ad2f47a57448ec98b13c3, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
+  - CLOUDNORMAL
   - CLOUDOFFSET
-  - FRESNEL
-  - TRIPLANAR
   - USE_CLOUDS
+  - VERTEXALPHA
   - VERTEXCOLOR
-  - _EMISSION
-  m_LightmapFlags: 1
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3500
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -31,12 +30,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Cloud1Tex:
-        m_Texture: {fileID: 2800000, guid: cfa55abb9a37c15478c6072b2127d7b5, type: 3}
-        m_Scale: {x: 3, y: 3}
+        m_Texture: {fileID: 2800000, guid: 6928d5ce32b0c1c4ca0d35d775cf87a2, type: 3}
+        m_Scale: {x: 5, y: 30}
         m_Offset: {x: 0, y: 0}
     - _Cloud2Tex:
-        m_Texture: {fileID: 2800000, guid: bcb584f3ec0599b459e5df6385a69933, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 18bfbab41e3194247898d0cf2d955f10, type: 3}
+        m_Scale: {x: 5, y: 30.2}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
         m_Texture: {fileID: 0}
@@ -55,9 +54,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1e9ad0be781432e4baad30f3afa496b8, type: 3}
+        m_Texture: {fileID: 2800000, guid: e2a1455fc538ccf49b43727f54a2260b, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0.2}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -71,36 +70,36 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RemapTex:
-        m_Texture: {fileID: 2800000, guid: 6e077fadd1dce26459fba71558b5a288, type: 3}
+        m_Texture: {fileID: 2800000, guid: 86272db6f6bc6eb43b6711c661aeabf3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlphaBias: 0
-    - _AlphaBoost: 20
-    - _Boost: 1.6
+    - _AlphaBias: 0.2
+    - _AlphaBoost: 1
+    - _Boost: 1
     - _BumpScale: 1
     - _CalcTextureAlphaOn: 0
     - _CloudOffsetOn: 1
     - _CloudsOn: 1
     - _Cull: 0
-    - _Cutoff: 0.578
-    - _DepthOffset: 10
+    - _Cutoff: 0.5
+    - _DepthOffset: -0.3
     - _DetailNormalMapScale: 1
     - _DisableRemapOn: 0
-    - _DistortionStrength: 0.52
+    - _DistortionStrength: -0.66
     - _DstBlend: 1
     - _ExternalAlpha: 1
     - _Fade: 1
     - _FadeCloseDistance: 0.5
     - _FadeCloseOn: 0
-    - _FresnelOn: 1
-    - _FresnelPower: -0.33
+    - _FresnelOn: 0
+    - _FresnelPower: 0.5
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _InternalSimpleBlendMode: 1
-    - _InvFade: 2
+    - _InternalSimpleBlendMode: 0
+    - _InvFade: 1.5
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -112,14 +111,14 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _UseUV1On: 0
-    - _VertexAlphaOn: 0
+    - _VertexAlphaOn: 1
     - _VertexColorOn: 1
     - _VertexOffsetOn: 0
     - _ZTest: 4
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _CutoffScroll: {r: 0.08, g: -0.1, b: 0.1, a: 0}
+    - _Color: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
+    - _CutoffScroll: {r: -10, g: 0, b: -7, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _TintColor: {r: 0.05882353, g: 0.011764706, b: 0.019607844, a: 0.6156863}
+    - _TintColor: {r: 0.2509804, g: 0.19215687, b: 0.2509804, a: 1}
   m_BuildTextureStacks: []

@@ -112,7 +112,7 @@ MonoBehaviour:
   Name: Desolate_Coast
   Description: An alternate Stage 1 map set on a dark, overcast island. Also comes
     with a Simulacrum variant!
-  Version: 1.0.0
+  Version: 1.1.0
   Dependencies:
   - {fileID: 11400000, guid: 2d4d09ec817c24698d35dc9bf0704fdc, type: 2}
   - {fileID: 11400000, guid: f0d760e9d4649854da675f3b2978b41b, type: 2}

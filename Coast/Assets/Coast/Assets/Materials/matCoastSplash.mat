@@ -7,20 +7,14 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: matCoastStormCloud
-  m_Shader: {fileID: 4800000, guid: 8ae0e514823ad2f47a57448ec98b13c3, type: 3}
+  m_Name: matCoastSplash
+  m_Shader: {fileID: 4800000, guid: a06f9b59b28aab242b6a130921411a94, type: 3}
   m_ValidKeywords: []
-  m_InvalidKeywords:
-  - CLOUDOFFSET
-  - FRESNEL
-  - TRIPLANAR
-  - USE_CLOUDS
-  - VERTEXCOLOR
-  - _EMISSION
-  m_LightmapFlags: 1
-  m_EnableInstancingVariants: 0
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2450
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -31,11 +25,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Cloud1Tex:
-        m_Texture: {fileID: 2800000, guid: cfa55abb9a37c15478c6072b2127d7b5, type: 3}
-        m_Scale: {x: 3, y: 3}
+        m_Texture: {fileID: 2800000, guid: e8179b54cf600e84aaaf84931364360d, type: 3}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Cloud2Tex:
-        m_Texture: {fileID: 2800000, guid: bcb584f3ec0599b459e5df6385a69933, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -55,11 +49,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1e9ad0be781432e4baad30f3afa496b8, type: 3}
+        m_Texture: {fileID: 2800000, guid: c9b1e1f371d1f6d479268fd1d5337746, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0.2}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 2800000, guid: 7eff22ad3f010594e94336359fb2f45b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -71,55 +69,42 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RemapTex:
-        m_Texture: {fileID: 2800000, guid: 6e077fadd1dce26459fba71558b5a288, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlphaBias: 0
-    - _AlphaBoost: 20
-    - _Boost: 1.6
+    - _AlphaBoost: 1.32
     - _BumpScale: 1
-    - _CalcTextureAlphaOn: 0
-    - _CloudOffsetOn: 1
-    - _CloudsOn: 1
+    - _CloudNormalMap: 0
     - _Cull: 0
-    - _Cutoff: 0.578
-    - _DepthOffset: 10
+    - _Cutoff: 0.231
     - _DetailNormalMapScale: 1
-    - _DisableRemapOn: 0
-    - _DistortionStrength: 0.52
-    - _DstBlend: 1
+    - _DstBlend: 0
+    - _EmissionFromAlbedo: 0
     - _ExternalAlpha: 1
-    - _Fade: 1
-    - _FadeCloseDistance: 0.5
-    - _FadeCloseOn: 0
-    - _FresnelOn: 1
-    - _FresnelPower: -0.33
+    - _ExtrusionStrength: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _InternalSimpleBlendMode: 1
-    - _InvFade: 2
+    - _InvFade: 16.5
     - _Metallic: 0
     - _Mode: 0
+    - _NormalStrength: 2.39
     - _OcclusionStrength: 1
-    - _OffsetAmount: 0
     - _Parallax: 0.02
-    - _SkyboxOnly: 0
+    - _RampInfo: 4
     - _SmoothnessTextureChannel: 0
+    - _SpecularExponent: 1
     - _SpecularHighlights: 1
+    - _SpecularStrength: 0.443
     - _SrcBlend: 1
     - _UVSec: 0
-    - _UseUV1On: 0
     - _VertexAlphaOn: 0
-    - _VertexColorOn: 1
-    - _VertexOffsetOn: 0
-    - _ZTest: 4
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _CutoffScroll: {r: 0.08, g: -0.1, b: 0.1, a: 0}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _TintColor: {r: 0.05882353, g: 0.011764706, b: 0.019607844, a: 0.6156863}
+    - _CutoffScroll: {r: 3, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 0.101960786, g: 0.05490196, b: 0.09411765, a: 1}
+    - _TintColor: {r: 1.0727206, g: 1.0727206, b: 1.0727206, a: 1}
   m_BuildTextureStacks: []
