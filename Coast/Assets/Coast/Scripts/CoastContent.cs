@@ -101,10 +101,17 @@ namespace DesolateCoast.Content
                 yield return null;
             }
 
-            coastSceneDef.mainTrack = mainTrackDefRequest.Result;
-            coastSceneDef.bossTrack = bossTrackDefRequest.Result;
+            if (DesolateCoast.mapOST.Value == DesolateCoast.preferredOST.Castle_Of_Memories)
+            {
+                ContentProvider.SetupMusic();
+            }
+            else
+            {
+                coastSceneDef.mainTrack = mainTrackDefRequest.Result;
+                simuSceneDef.mainTrack = coastSceneDef.mainTrack;
+            }
 
-            simuSceneDef.mainTrack = coastSceneDef.mainTrack;
+            coastSceneDef.bossTrack = bossTrackDefRequest.Result;
             simuSceneDef.bossTrack = coastSceneDef.bossTrack;
 
 

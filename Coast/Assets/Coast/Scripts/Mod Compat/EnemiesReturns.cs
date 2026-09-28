@@ -46,6 +46,36 @@ namespace DesolateCoast
                 }
 
             }
+
+            // Colossus
+            if (DesolateCoast.toggleColossus.Value && General.EnableColossus.Value)
+            {
+                var card = new RoR2.DirectorCard()
+                {
+                    spawnCard = (RoR2.SpawnCard)(object)ColossusBody.SpawnCards.cscColossusDefault,
+                    spawnDistance = RoR2.DirectorCore.MonsterSpawnDistance.Standard,
+                    selectionWeight = Colossus.SelectionWeight.Value,
+                    minimumStageCompletions = 5
+                };
+
+                var holder = new DirectorAPI.DirectorCardHolder
+                {
+                    Card = card,
+                    MonsterCategory = DirectorAPI.MonsterCategory.Champions
+                };
+
+                if (!Colossus.DefaultStageList.Value.Contains(DesolateCoast.mapName)) //Checking whether default stage list has this enemy to avoid adding a duplicate spawn card
+                {
+                    DirectorAPI.Helpers.AddNewMonsterToStage(holder, false, DirectorAPI.Stage.Custom, DesolateCoast.mapName);
+                    Log.Info("Colossus added to Desolate Coast's spawn pool.");
+                }
+                if (!Colossus.DefaultStageList.Value.Contains(DesolateCoast.simuName))
+                {
+                    DirectorAPI.Helpers.AddNewMonsterToStage(holder, false, DirectorAPI.Stage.Custom, DesolateCoast.simuName);
+                    Log.Info("Colossus added to Desolate Coast's simulacrum spawn pool.");
+                }
+
+            }
         }
     }
 }

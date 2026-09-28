@@ -5,6 +5,9 @@ The map has a fairly simple layout. It's roughly the same size as Titanic Plains
 
 ![](https://github.com/CalculatorSoup/Desolate\_Coast/blob/main/Coast/Assets/preview%20beach.png?raw=true)
 
+# Music
+Desolate Coast has a unique music track, 'Castle of Memories' by Cane B - the track is unreleased (at least, at the time of writing), but you can check out his other work on [YouTube](https://www.youtube.com/@caneb4) and [SoundCloud](https://soundcloud.com/vgmcb)!
+
 # Simulacrum
 Desolate Coast also has a Simulacrum variant which looks a bit dry, but is otherwise pretty much the same as the regular version.
 
@@ -19,7 +22,7 @@ Desolate Coast also has a Simulacrum variant which looks a bit dry, but is other
   * Modded enemy toggles
 * Modded enemies can appear if their respective mod is enabled
   * [EnemiesReturns](https://thunderstore.io/package/Risky_Sleeps/EnemiesReturns/): Sand Crab
-  * [Starstorm 2](https://thunderstore.io/package/TeamMoonstorm/Starstorm2/): Wayfarer
+  * [Starstorm 2](https://thunderstore.io/package/TeamMoonstorm/Starstorm2/): Wayfarer, Security Chest
 
 # Bugs / Issues
 Please let me know on GitHub and/or Discord (@worms / @ry6240) if you encounter any issues with the map. Also feel free to message me if you have suggestions or other feedback!!

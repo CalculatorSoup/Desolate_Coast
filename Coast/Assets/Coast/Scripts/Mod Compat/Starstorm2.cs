@@ -49,7 +49,27 @@ namespace DesolateCoast
                 DirectorAPI.Helpers.AddNewMonsterToStage(wayfarerHolder, false, DirectorAPI.Stage.Custom, DesolateCoast.simuName);
                 Log.Info("Wayfarer added to Desolate Coast's spawn pool.");
             }
+            // Mimic
+            var mimicValue = FindEnemyConfig("Mimic");
 
+            if (DesolateCoast.toggleMimic.Value && mimicValue == "false")
+            {
+                var mimicCard = new RoR2.DirectorCard()
+                {
+                    spawnCard = SS2Assets.LoadAsset<RoR2.InteractableSpawnCard>("iscMimic", (SS2Bundle)17),
+                    spawnDistance = RoR2.DirectorCore.MonsterSpawnDistance.Standard,
+                    selectionWeight = 2
+                };
+
+                var mimicHolder = new DirectorAPI.DirectorCardHolder
+                {
+                    Card = mimicCard,
+                    InteractableCategory = DirectorAPI.InteractableCategory.Chests
+                };
+                DirectorAPI.Helpers.AddNewInteractableToStage(mimicHolder, DirectorAPI.Stage.Custom, DesolateCoast.mapName);
+                Log.Info("Security Chest added to Desolate Coast's spawn pool.");
+
+            }
         }
 
     }

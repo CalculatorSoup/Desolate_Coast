@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 539968692}
-  m_IndirectSpecularColor: {r: 0.034474958, g: 0.020782452, b: 0.045686997, a: 1}
+  m_IndirectSpecularColor: {r: 0.034473024, g: 0.024391972, b: 0.04564596, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1548,6 +1548,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 540466094}
     m_Modifications:
+    - target: {fileID: 1876132147750994101, guid: 8fd0bfa37f43de24ba9396c682be0cb7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5085108172925320955, guid: 8fd0bfa37f43de24ba9396c682be0cb7, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3217,7 +3221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -4413,7 +4417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
@@ -5587,6 +5591,10 @@ PrefabInstance:
     - target: {fileID: 8835567306316783867, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835567306316783867, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
@@ -12670,6 +12678,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7034272796301492526, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7707299290809261852, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_Name
       value: Coast Boulder (75)
@@ -14161,6 +14173,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7034272796301492526, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7707299290809261852, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_Name
       value: Coast Boulder (61)
@@ -14281,13 +14297,12 @@ GameObject:
   - component: {fileID: 204348370}
   - component: {fileID: 204348373}
   - component: {fileID: 204348372}
-  - component: {fileID: 204348371}
   m_Layer: 0
   m_Name: Sea Floor Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 109
   m_IsActive: 1
 --- !u!4 &204348370
 Transform:
@@ -14304,20 +14319,6 @@ Transform:
   m_Father: {fileID: 785962644}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &204348371
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 204348369}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &204348372
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14326,7 +14327,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204348369}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -14878,7 +14879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -21080,7 +21081,7 @@ GameObject:
   - component: {fileID: 235473581}
   - component: {fileID: 235473582}
   m_Layer: 0
-  m_Name: Spawn (3)
+  m_Name: SurvivorPodSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21094,7 +21095,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235473580}
   m_LocalRotation: {x: -0, y: 0.61968803, z: -0, w: 0.7848482}
-  m_LocalPosition: {x: -381.59, y: -0.15, z: -85.76}
+  m_LocalPosition: {x: -381.59, y: -0.412, z: -85.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21219,7 +21220,7 @@ GameObject:
   - component: {fileID: 236598390}
   - component: {fileID: 236598391}
   m_Layer: 0
-  m_Name: Spawn (2)
+  m_Name: SurvivorPodSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21233,7 +21234,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236598389}
   m_LocalRotation: {x: -0, y: 0.6745486, z: -0, w: 0.7382304}
-  m_LocalPosition: {x: -378.95, y: -0.15, z: -94.22}
+  m_LocalPosition: {x: -378.95, y: -0.347, z: -94.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21936,6 +21937,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7034272796301492526, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7707299290809261852, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_Name
       value: Coast Boulder (21)
@@ -22337,7 +22342,7 @@ GameObject:
   - component: {fileID: 256209732}
   - component: {fileID: 256209733}
   m_Layer: 0
-  m_Name: Spawn (1)
+  m_Name: SurvivorPodSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26737,6 +26742,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8835567306316783867, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 121
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
 --- !u!4 &316561858 stripped
@@ -26810,6 +26819,10 @@ PrefabInstance:
     - target: {fileID: 4810055003364041213, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034272796301492526, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7707299290809261852, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_Name
@@ -31501,7 +31514,7 @@ MonoBehaviour:
   setPositionAndRotationToZero: 1
   useLocalPositionAndRotation: 1
   refreshInEditor: 1
-  conserveSoundString: 0
+  conserveSoundString: 1
   gateToggleOnPurchase: 0
   gateToEnableWhenPurchased: 
   gateToDisableWhenPurchased: 
@@ -31519,7 +31532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceptTeam: -1
-  targetElevationTransform: {fileID: 0}
+  targetElevationTransform: {fileID: 1229429493}
   jumpVelocity: {x: -0.6, y: 47.1, z: -14.1}
   time: 2.5
   jumpSoundString: 
@@ -34900,7 +34913,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -36127,7 +36140,7 @@ GameObject:
   - component: {fileID: 486009479}
   - component: {fileID: 486009480}
   m_Layer: 0
-  m_Name: Spawn (3)
+  m_Name: SurvivorPodSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36951,7 +36964,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499569526}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -285.25497, y: 24.404394, z: -37.523438}
+  m_LocalPosition: {x: -286.32, y: 24.27, z: -36.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41125,7 +41138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
-      value: 46
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -41921,7 +41934,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
@@ -42566,7 +42579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
@@ -42952,7 +42965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
@@ -45476,7 +45489,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -48598,7 +48611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
-      value: 45
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -52312,7 +52325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
@@ -53483,7 +53496,7 @@ GameObject:
   - component: {fileID: 720374256}
   - component: {fileID: 720374257}
   m_Layer: 0
-  m_Name: Spawn (3)
+  m_Name: SurvivorPodSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53497,7 +53510,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720374255}
   m_LocalRotation: {x: -0, y: 0.22545053, z: -0, w: 0.97425467}
-  m_LocalPosition: {x: -291.38, y: 29.61, z: -100.22}
+  m_LocalPosition: {x: -291.38, y: 30.16, z: -100.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -54525,7 +54538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
@@ -56221,7 +56234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
-      value: 39
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -58763,6 +58776,10 @@ PrefabInstance:
     - target: {fileID: 4810055003364041213, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034272796301492526, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7707299290809261852, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_Name
@@ -64415,7 +64432,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815964748}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -292.24942, y: 27.377737, z: -46.36819}
+  m_LocalPosition: {x: -291.76, y: 26.28, z: -44.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66891,7 +66908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
@@ -67750,6 +67767,10 @@ PrefabInstance:
     - target: {fileID: 2971376127046230352, guid: 8be194ee9a28f724fb7b96af0f23ad88, type: 3}
       propertyPath: surfaceDef
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3067992737158497270, guid: 8be194ee9a28f724fb7b96af0f23ad88, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3132713067117164017, guid: 8be194ee9a28f724fb7b96af0f23ad88, type: 3}
       propertyPath: surfaceDef
@@ -70895,6 +70916,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4810055003364041213, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034272796301492526, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7707299290809261852, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
@@ -78051,7 +78076,7 @@ GameObject:
   - component: {fileID: 948722993}
   - component: {fileID: 948722994}
   m_Layer: 0
-  m_Name: Spawn (2)
+  m_Name: SurvivorPodSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78206,6 +78231,10 @@ PrefabInstance:
     - target: {fileID: 6284431759939610818, guid: bc301df2f6c6c814499322b419d3fbfd, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528195977630281598, guid: bc301df2f6c6c814499322b419d3fbfd, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc301df2f6c6c814499322b419d3fbfd, type: 3}
@@ -79014,7 +79043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
@@ -80414,7 +80443,7 @@ MonoBehaviour:
   setPositionAndRotationToZero: 1
   useLocalPositionAndRotation: 1
   refreshInEditor: 1
-  conserveSoundString: 0
+  conserveSoundString: 1
   gateToggleOnPurchase: 0
   gateToEnableWhenPurchased: 
   gateToDisableWhenPurchased: 
@@ -80432,7 +80461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceptTeam: -1
-  targetElevationTransform: {fileID: 0}
+  targetElevationTransform: {fileID: 1010335805}
   jumpVelocity: {x: 5.3, y: 49.48, z: -13.39}
   time: 2.5
   jumpSoundString: 
@@ -80762,6 +80791,10 @@ PrefabInstance:
     - target: {fileID: 8835567306316783867, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835567306316783867, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
@@ -81531,7 +81564,7 @@ GameObject:
   - component: {fileID: 1009293435}
   - component: {fileID: 1009293436}
   m_Layer: 0
-  m_Name: Spawn (1)
+  m_Name: SurvivorPodSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81545,7 +81578,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009293434}
   m_LocalRotation: {x: -0, y: 0.99072963, z: -0, w: -0.13584849}
-  m_LocalPosition: {x: -24.14, y: 42.41, z: -30.61}
+  m_LocalPosition: {x: -24.14, y: 42.385, z: -30.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -81623,6 +81656,7 @@ GameObject:
   - component: {fileID: 1010335805}
   - component: {fileID: 1010335806}
   - component: {fileID: 1010335807}
+  - component: {fileID: 1010335808}
   m_Layer: 0
   m_Name: Cliff Geyser Dest
   m_TagString: Untagged
@@ -81673,6 +81707,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   other: {fileID: 460771866}
+  minJumpHeight: 0
+  gateName: 
+  objectsToEnableDuringTest: []
+  objectsToDisableDuringTest: []
+--- !u!114 &1010335808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010335804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1391716628, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  other: {fileID: 1155754391}
   minJumpHeight: 0
   gateName: 
   objectsToEnableDuringTest: []
@@ -81902,6 +81953,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4810055003364041213, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034272796301492526, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7707299290809261852, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
@@ -82632,7 +82687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
@@ -83072,6 +83127,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7034272796301492526, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7707299290809261852, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_Name
       value: Coast Boulder (80)
@@ -83295,7 +83354,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028528636}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -233.33214, y: 15.452471, z: -11.415296}
+  m_LocalPosition: {x: -233.33214, y: 13.93, z: -11.415296}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87349,7 +87408,7 @@ MonoBehaviour:
   setPositionAndRotationToZero: 1
   useLocalPositionAndRotation: 1
   refreshInEditor: 1
-  conserveSoundString: 0
+  conserveSoundString: 1
   gateToggleOnPurchase: 0
   gateToEnableWhenPurchased: 
   gateToDisableWhenPurchased: 
@@ -87367,7 +87426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceptTeam: -1
-  targetElevationTransform: {fileID: 0}
+  targetElevationTransform: {fileID: 480893419}
   jumpVelocity: {x: 8.1, y: 48.1, z: 26.84}
   time: 2.5
   jumpSoundString: 
@@ -88594,7 +88653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
@@ -89286,7 +89345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -89822,6 +89881,10 @@ PrefabInstance:
     - target: {fileID: 8835567306316783867, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835567306316783867, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
@@ -91037,7 +91100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
@@ -92506,7 +92569,7 @@ GameObject:
   - component: {fileID: 1154208503}
   - component: {fileID: 1154208504}
   m_Layer: 0
-  m_Name: Spawn (3)
+  m_Name: SurvivorPodSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92551,7 +92614,7 @@ GameObject:
   - component: {fileID: 1155754390}
   - component: {fileID: 1155754391}
   m_Layer: 0
-  m_Name: MapNode
+  m_Name: Dropdown 11
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -92720,6 +92783,10 @@ PrefabInstance:
     - target: {fileID: 8835567306316783867, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835567306316783867, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
@@ -93402,7 +93469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
@@ -94669,7 +94736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
@@ -96320,7 +96387,7 @@ GameObject:
   - component: {fileID: 1213375778}
   - component: {fileID: 1213375779}
   m_Layer: 0
-  m_Name: Spawn
+  m_Name: SurvivorPodSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96334,7 +96401,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213375777}
   m_LocalRotation: {x: -0, y: 0.9292861, z: -0, w: 0.3693608}
-  m_LocalPosition: {x: -53.8, y: 42.28, z: -37.79}
+  m_LocalPosition: {x: -53.225, y: 42.28, z: -38.081}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -97800,6 +97867,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 786079462}
     m_Modifications:
+    - target: {fileID: 3569523422880218933, guid: 5ba568e875cdf8e4b857fa5f3fd6998d, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6607477284948174995, guid: 5ba568e875cdf8e4b857fa5f3fd6998d, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -102004,6 +102075,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8835567306316783867, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 121
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
 --- !u!4 &1290396527 stripped
@@ -104968,7 +105043,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330854322}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -276.3984, y: 21.805044, z: -26.501198}
+  m_LocalPosition: {x: -277.96, y: 21.12, z: -24.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -106349,7 +106424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
-      value: 44
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -106828,7 +106903,7 @@ GameObject:
   - component: {fileID: 1360845351}
   - component: {fileID: 1360845352}
   m_Layer: 0
-  m_Name: Spawn (1)
+  m_Name: SurvivorPodSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108525,7 +108600,7 @@ GameObject:
   - component: {fileID: 1382268804}
   - component: {fileID: 1382268805}
   m_Layer: 0
-  m_Name: Spawn (2)
+  m_Name: SurvivorPodSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108580,7 +108655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -109472,7 +109547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
@@ -109927,6 +110002,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4810055003364041213, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
   m_PrefabInstance: {fileID: 1409109435}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1409223887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1409223888}
+  - component: {fileID: 1409223890}
+  - component: {fileID: 1409223889}
+  m_Layer: 20
+  m_Name: Ocean PP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1409223888
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409223887}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.112500004, y: -50.3, z: -0.0724}
+  m_LocalScale: {x: 0.001, y: 1, z: 0.001}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1806916724}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1409223889
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409223887}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 800, y: 100, z: 800}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1409223890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409223887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 5620a34e0825512469f8194727d846f7, type: 2}
+  isGlobal: 0
+  blendDistance: 0.1
+  weight: 1
+  priority: 200
 --- !u!1 &1410087673
 GameObject:
   m_ObjectHideFlags: 0
@@ -115691,6 +115829,14 @@ PrefabInstance:
       propertyPath: surfaceDef
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2771224638339265858, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3892296721491875567, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -115766,6 +115912,10 @@ PrefabInstance:
     - target: {fileID: 8552038079617833835, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_Name
       value: Coast Log (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8642955861301106855, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8732219410163610223, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -118614,7 +118764,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -120043,7 +120193,7 @@ GameObject:
   - component: {fileID: 1563941131}
   - component: {fileID: 1563941132}
   m_Layer: 0
-  m_Name: Spawn
+  m_Name: SurvivorPodSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120057,7 +120207,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563941130}
   m_LocalRotation: {x: -0, y: 0.60576004, z: -0, w: 0.7956474}
-  m_LocalPosition: {x: -378.76, y: 0.39, z: -36.81}
+  m_LocalPosition: {x: -378.76, y: 0.238, z: -36.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -122430,6 +122580,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 540466094}
     m_Modifications:
+    - target: {fileID: 1876132147750994101, guid: 8fd0bfa37f43de24ba9396c682be0cb7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5085108172925320955, guid: 8fd0bfa37f43de24ba9396c682be0cb7, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -122700,7 +122854,7 @@ GameObject:
   - component: {fileID: 1597306144}
   - component: {fileID: 1597306145}
   m_Layer: 0
-  m_Name: Spawn (2)
+  m_Name: SurvivorPodSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122714,7 +122868,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1597306143}
   m_LocalRotation: {x: -0, y: -0.0005954633, z: -0, w: -0.9999999}
-  m_LocalPosition: {x: -39.9, y: 31.75, z: -98.73}
+  m_LocalPosition: {x: -39.9, y: 31.922, z: -98.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -124122,6 +124276,10 @@ PrefabInstance:
       propertyPath: surfaceDef
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3067992737158497270, guid: 8be194ee9a28f724fb7b96af0f23ad88, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3132713067117164017, guid: 8be194ee9a28f724fb7b96af0f23ad88, type: 3}
       propertyPath: surfaceDef
       value: 
@@ -124267,9 +124425,17 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7458d2d02cbeb0d41a619895998a6749, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7458d2d02cbeb0d41a619895998a6749, type: 3}
       propertyPath: m_Name
       value: Coast Trench
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7458d2d02cbeb0d41a619895998a6749, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7458d2d02cbeb0d41a619895998a6749, type: 3}
@@ -126349,7 +126515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
@@ -133363,7 +133529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -134002,6 +134168,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7034272796301492526, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7707299290809261852, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_Name
       value: Coast Boulder (82)
@@ -134254,7 +134424,7 @@ MonoBehaviour:
   setPositionAndRotationToZero: 1
   useLocalPositionAndRotation: 1
   refreshInEditor: 1
-  conserveSoundString: 0
+  conserveSoundString: 1
   gateToggleOnPurchase: 0
   gateToEnableWhenPurchased: 
   gateToDisableWhenPurchased: 
@@ -134272,7 +134442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceptTeam: -1
-  targetElevationTransform: {fileID: 0}
+  targetElevationTransform: {fileID: 1341786019}
   jumpVelocity: {x: 3.4, y: 57.3, z: 13.67}
   time: 3
   jumpSoundString: 
@@ -137802,7 +137972,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
@@ -137824,7 +137994,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -138550,6 +138720,7 @@ GameObject:
   - component: {fileID: 1803466685}
   - component: {fileID: 1803466686}
   - component: {fileID: 1803466687}
+  - component: {fileID: 1803466688}
   m_Layer: 0
   m_Name: MapNode
   m_TagString: Untagged
@@ -138604,6 +138775,23 @@ MonoBehaviour:
   gateName: 
   objectsToEnableDuringTest: []
   objectsToDisableDuringTest: []
+--- !u!114 &1803466688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803466684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1391716628, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  other: {fileID: 1155754391}
+  minJumpHeight: 0
+  gateName: 
+  objectsToEnableDuringTest: []
+  objectsToDisableDuringTest: []
 --- !u!1 &1806916723
 GameObject:
   m_ObjectHideFlags: 0
@@ -138620,7 +138808,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 105
   m_IsActive: 1
 --- !u!4 &1806916724
 Transform:
@@ -138633,7 +138821,8 @@ Transform:
   m_LocalPosition: {x: 0, y: -8.3, z: 0}
   m_LocalScale: {x: 1000, y: 1, z: 1000}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1409223888}
   m_Father: {fileID: 565609500}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -138971,7 +139160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
@@ -139378,7 +139567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
@@ -142072,6 +142261,10 @@ PrefabInstance:
     - target: {fileID: 8835567306316783867, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835567306316783867, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
@@ -149963,7 +150156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -151019,6 +151212,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7034272796301492526, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7707299290809261852, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_Name
       value: Coast Boulder (84)
@@ -151508,7 +151705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
-      value: 42
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -152433,6 +152630,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4810055003364041213, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
       propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034272796301492526, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7707299290809261852, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
@@ -153478,7 +153679,7 @@ GameObject:
   - component: {fileID: 1944630871}
   - component: {fileID: 1944630872}
   m_Layer: 0
-  m_Name: Spawn
+  m_Name: SurvivorPodSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155870,7 +156071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
@@ -156602,9 +156803,17 @@ PrefabInstance:
       propertyPath: surfaceDef
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2771224638339265858, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3892296721491875567, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
-      value: 43
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -156665,6 +156874,10 @@ PrefabInstance:
     - target: {fileID: 8552038079617833835, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_Name
       value: Coast Log (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8642955861301106855, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
@@ -157885,6 +158098,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8835567306316783867, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 121
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19b2accb0401df846a8cb49b41c20194, type: 3}
 --- !u!4 &2006223279 stripped
@@ -158091,7 +158308,7 @@ GameObject:
   - component: {fileID: 2013107004}
   - component: {fileID: 2013107005}
   m_Layer: 0
-  m_Name: Spawn (1)
+  m_Name: SurvivorPodSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158105,7 +158322,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013107003}
   m_LocalRotation: {x: -0, y: 0.79472804, z: -0, w: 0.6069658}
-  m_LocalPosition: {x: -375.81, y: -0.02000001, z: -51.63}
+  m_LocalPosition: {x: -375.81, y: 0.165, z: -51.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -158365,7 +158582,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2017246997}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -266.96124, y: 20.294409, z: -15.357455}
+  m_LocalPosition: {x: -266.96124, y: 18.31, z: -15.357455}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -159034,7 +159251,7 @@ GameObject:
   - component: {fileID: 2033326447}
   - component: {fileID: 2033326448}
   m_Layer: 0
-  m_Name: Spawn
+  m_Name: SurvivorPodSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -159415,7 +159632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 930931ea9deb5ab4cb8ba5b6f1e3ec75, type: 3}
@@ -160176,6 +160393,10 @@ PrefabInstance:
     - target: {fileID: 2971376127046230352, guid: 8be194ee9a28f724fb7b96af0f23ad88, type: 3}
       propertyPath: surfaceDef
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3067992737158497270, guid: 8be194ee9a28f724fb7b96af0f23ad88, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3132713067117164017, guid: 8be194ee9a28f724fb7b96af0f23ad88, type: 3}
       propertyPath: surfaceDef
@@ -161139,7 +161360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 4816917386248723645, guid: 74d98f0569980cb4ebc1e9aeefe5bdd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -163325,7 +163546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 123
+      value: 121
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f230332ec3fa943b59f1b56c354fe2, type: 3}

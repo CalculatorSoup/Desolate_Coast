@@ -17,7 +17,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2900
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -59,6 +59,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 2800000, guid: 0529d55caefe9d344b80eae912902339, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -78,6 +82,7 @@ Material:
     - _Boost: 1
     - _BumpScale: 1
     - _CalcTextureAlphaOn: 0
+    - _CloudNormalMap: 0
     - _CloudOffsetOn: 0
     - _CloudsOn: 1
     - _Cull: 0
@@ -87,7 +92,9 @@ Material:
     - _DisableRemapOn: 1
     - _DistortionStrength: 0.1
     - _DstBlend: 10
+    - _EmissionFromAlbedo: 0
     - _ExternalAlpha: 1
+    - _ExtrusionStrength: 1
     - _Fade: 1
     - _FadeCloseDistance: 0.5
     - _FadeCloseOn: 0
@@ -100,12 +107,16 @@ Material:
     - _InvFade: 0.1
     - _Metallic: 0
     - _Mode: 0
+    - _NormalStrength: 1
     - _OcclusionStrength: 1
     - _OffsetAmount: 0
     - _Parallax: 0.02
+    - _RampInfo: 0
     - _SkyboxOnly: 1
     - _SmoothnessTextureChannel: 0
+    - _SpecularExponent: 1
     - _SpecularHighlights: 1
+    - _SpecularStrength: 0
     - _SrcBlend: 1
     - _UVSec: 0
     - _UseUV1On: 0

@@ -44,7 +44,7 @@ namespace DesolateCoast
 
         public const string Name = "Desolate_Coast";
 
-        public const string Version = "1.1.0";
+        public const string Version = "1.2.0";
 
         public const string GUID = Author + "." + Name;
 
@@ -53,14 +53,21 @@ namespace DesolateCoast
         public static ConfigEntry<bool> enableRegular;
         public static ConfigEntry<bool> enableSimulacrum;
         public static ConfigEntry<bool> stage1Simulacrum;
+        public static ConfigEntry<preferredOST> mapOST;
 
         public static ConfigEntry<bool> toggleSandCrab;
+        public static ConfigEntry<bool> toggleColossus;
 
         public static ConfigEntry<bool> toggleWayfarer;
+        public static ConfigEntry<bool> toggleMimic;
 
         public const string mapName = "coast_wormsworms";
         public const string simuName = "itcoast_wormsworms";
-        private static GameObject fanPrefab;
+        public enum preferredOST
+        {
+            Castle_Of_Memories,
+            Evapotranspiration
+        }
 
 
         private void Awake()
@@ -75,12 +82,20 @@ namespace DesolateCoast
 
             RoR2.Language.collectLanguageRootFolders += CollectLanguageRootFolders;
 
+            On.RoR2.MusicController.StartIntroMusic += MusicController_StartIntroMusic;
+
             SceneManager.sceneLoaded += SceneSetup;
 
             RoR2.RoR2Application.onLoadFinished += AddModdedEnemies;
 
         }
-        
+
+        private void MusicController_StartIntroMusic(On.RoR2.MusicController.orig_StartIntroMusic orig, RoR2.MusicController self)
+        {
+            orig(self);
+            AkSoundEngine.PostEvent("WORM_Coast_Play_Music_System", self.gameObject);
+        }
+
         public static void AddModdedEnemies()
         {
             if (IsEnemiesReturns.enabled)
@@ -89,7 +104,7 @@ namespace DesolateCoast
             }
             if (IsStarstorm2.enabled)
             {
-                Starstorm2Compat.AddEnemies(); //Wayfarer
+                Starstorm2Compat.AddEnemies(); //Wayfarer, Mimic
             }
         }
         
@@ -122,7 +137,7 @@ namespace DesolateCoast
                 if (bank)
                 {
                     WwiseBankReference rjSound = Addressables.LoadAssetAsync<WwiseBankReference>("Wwise/8AC8A9CB-604F-43BC-A864-873DC735786F.asset").WaitForCompletion();
-                    WwiseEventReference startRJSound = Addressables.LoadAssetAsync<WwiseEventReference>("Wwise/6C9A5B06-3C87-4DD2-835F-B0F2385B7700.asset").WaitForCompletion();
+                    WwiseEventReference startRJSound = Addressables.LoadAssetAsync<WwiseEventReference>("Wwise/70751574-0F2F-4A76-85FC-08F10CCB150A.asset").WaitForCompletion();
                     WwiseEventReference stopSound = Addressables.LoadAssetAsync<WwiseEventReference>("Wwise/6F2ADD1C-BD55-431F-A62F-80CCD5F9631D.asset").WaitForCompletion();
                     bank.data.WwiseObjectReference = rjSound;
                     ambient1.data.WwiseObjectReference = startRJSound;
@@ -132,7 +147,6 @@ namespace DesolateCoast
             {
                 Log.Error("no ambience :(");
             }
-
         }
 
         private void SceneSetup(Scene newScene, LoadSceneMode loadSceneMode)
@@ -140,6 +154,7 @@ namespace DesolateCoast
             if (newScene.name == mapName || newScene.name == simuName)
             {
                 CoastAmbienceSetup();
+                BroadcastMusicString();
 
                 Transform geyserHolder = GameObject.Find("HOLDER: Geysers").transform;
                 for (int i = 0; i < geyserHolder.childCount; i++)
@@ -159,6 +174,18 @@ namespace DesolateCoast
 
         }
 
+        private void BroadcastMusicString()
+        {
+            if (!NetworkServer.active) return;
+
+            string bgSongToken = "WORM_CHAT_DC_SONGPLAYING";
+
+            if (DesolateCoastContent.coastSceneDef.mainTrack.cachedName == "DesolateCoastMainMusic")
+            {
+                Chat.SendBroadcastChat(new Chat.SimpleChatMessage { baseToken = bgSongToken });
+            }
+        }
+
         private void ConfigSetup()
         {
             enableRegular =
@@ -176,16 +203,31 @@ namespace DesolateCoast
                                        "Enable Simulacrum Variant on Stage 1",
                                        false,
                                        "If false, Desolate Coast will only appear after clearing at least one stage in the Simulacrum, like Commencement.");
+            mapOST =
+                base.Config.Bind<preferredOST>("00 - Stages",
+                                        "Soundtrack - Stage Music",
+                                        preferredOST.Castle_Of_Memories,
+                                        "Set the stage's soundtrack. 'Evapotranspiration' was the original track used prior to version 1.2.0.");
             toggleSandCrab =
                 base.Config.Bind<bool>("01 - Monsters: EnemiesReturns",
                                        "Enable Sand Crab",
                                        true,
                                        "If true, Sand Crabs will appear in Desolate Coast.");
+            toggleColossus =
+                base.Config.Bind<bool>("01 - Monsters: EnemiesReturns",
+                                        "Enable Colossus",
+                                        true,
+                                        "If true, Colossi will appear in Desolate Coast.");
             toggleWayfarer =
                 base.Config.Bind<bool>("03 - Monsters: Starstorm 2",
                                        "Enable Wayfarer",
                                        true,
                                        "If true, Wayfarers will appear in Desolate Coast.");
+            toggleMimic =
+                base.Config.Bind<bool>("03 - Monsters: Starstorm 2",
+                                        "Enable Security Chest",
+                                        true,
+                                        "If true, Security Chests (Mimics) will appear in Desolate Coast.");
         }
     }
 }

@@ -1,3 +1,21 @@
+# 1.2.0
+* **Changes:**
+  * Added a unique music track - 'Castle of Memories' by Cane B! It's unreleased at the time of writing this, but you can check out his other work on [YouTube](https://www.youtube.com/@caneb4) and [SoundCloud](https://soundcloud.com/vgmcb)! Thanks to Cane B for letting me use it for the stage!
+    * Also added dependency on R2API Sound
+  * Starstorm 2: Security Chests can now appear in the stage! (also added a config option to toggle them)
+  * Slightly desaturated the sky
+  * Removed a bunch of unused assets, which should reduce the mod's file size somewhat
+* **Fixes:**
+  * Attempted to fix an issue where the ocean could appear to disappear when viewed from certain angles
+  * Fixed a few floating ground nodes in the metal platform area
+  * Fixed geysers being silent
+  * Increased the distance required for willow trees and logs to transition from LOD2 to culled
+
+# 1.1.1
+* Adjusted vertical placements for each of the manually placed escape pod spawns to align them with the ground (one in particular was partially submerged, which may or may not have been causing players to spawn under the map)
+* Added Colossus to the stage after looping if EnemiesReturns is enabled
+  * Also added a config option to toggle Colossus
+
 # 1.1.0
 * **Layout changes:**
   * Added a waterfall in the sloped area near the big wooden structure and moved/added a few rocks and pillars surrounding it
